@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura - °C para °F</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="conversao_temperatura.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar na Kads...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="conversao">
+            <div>
+                <h2>De Celsius para Fahrenheit</h2>
+                <label for="CF">Digite a temperatura em °C:</label>
+                <input type="text" id="CF" placeholder="Temperatura em Celsius">
+                <button onclick="CF()">Converter para °F</button>
+                <p id="respostaFar"></p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>De Fahrenheit para Celsius</h2>
+                <label for="FC">Digite a temperatura em °F:</label>
+                <input type="text" id="FC" placeholder="Temperatura em Fahrenheit">
+                <button onclick="FC()">Converter para °C</button>
+                <p id="respostaCel"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 – Kads Sistemas. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

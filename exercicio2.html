@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Soma de Números Pares e Ímpares</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercicio2.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Exercício 2 - Soma de Números Pares e Ímpares</h1>
+        <p>Elabore um programa que gera uma matriz 7 x 7 com números aleatórios no intervalo de 1 à 20. Após gerar a matriz, o programa deve calcular a soma dos números pares e ímpares separadamente. Use o laço "for" para implementar a lógica do programa.</p>
+
+        <button onclick="showCode()">Ver Código</button>
+
+        <div id="codeContainer" style="display: none;">
+            <h3>Código do Exercício</h3>
+            <pre>
+function ex2() {
+    let matriz = [
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0]
+    ];
+
+    let somaPar = 0, somaImpar = 0;
+
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            matriz[i][j] = setValueRandom(20, 1);
+        }
+    }
+
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if (matriz[i][j] % 2 == 0) {
+                somaPar += matriz[i][j];
+            } else {
+                somaImpar += matriz[i][j];
+            }
+        }
+    }
+
+    console.table(matriz);
+}
+            </pre>
+        </div>
+
+        <h3>Explicação:</h3>
+        <p>O código funciona da seguinte forma:</p>
+        <ul>
+            <li>A função <code>ex2</code> começa criando uma matriz 7x7, inicialmente preenchida com zeros.</li>
+            <li>Em seguida, o código preenche a matriz com números aleatórios entre 1 e 20 utilizando a função <code>setValueRandom(20, 1)</code> (presumivelmente definida em outro arquivo).</li>
+            <li>Na segunda parte, dois laços <code>for</code> percorrem a matriz e verificam se o número de cada célula é par ou ímpar.</li>
+            <li>Se o número for par (divisível por 2), ele é somado à variável <code>somaPar</code>. Se for ímpar, é somado à variável <code>somaImpar</code>.</li>
+            <li>Após a execução dos laços, a matriz gerada é exibida no console através de <code>console.table</code>.</li>
+        </ul>
+
+        <h3>Saída Esperada:</h3>
+        <p>O resultado será a matriz 7x7 gerada com números aleatórios, e a soma dos números pares e ímpares será calculada internamente, mas não exibida diretamente no console. Apenas a matriz será visível no console.</p>
+
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados - Kads Sistemas</p>
+    </footer>
+
+</body>
+</html>

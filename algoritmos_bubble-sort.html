@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort - Algoritmos de Ordenação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bubble_sort.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar na Kads...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="bubble-sort">
+            <h1>Bubble Sort</h1>
+            <p>O Bubble Sort é um algoritmo simples de ordenação que percorre a lista repetidamente, comparando elementos adjacentes e trocando-os de posição, se necessário.</p>
+
+            <div class="controls">
+                <label for="quantidade">Quantidade de números:</label>
+                <input type="number" id="quantidade" min="1" placeholder="Digite a quantidade">
+                <button id="gerar">Gerar Números</button>
+            </div>
+
+            <div id="numeros-gerados">
+                <h3>Números Gerados:</h3>
+                <p id="array-original">[ ]</p>
+            </div>
+
+            <div id="resultado-ordenacao">
+                <h3>Resultado da Ordenação:</h3>
+                <p id="array-ordenado">[ ]</p>
+            </div>
+
+            <button id="ordenar">Ordenar com Bubble Sort</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Kads Sistemas. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

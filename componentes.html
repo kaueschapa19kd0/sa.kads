@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes Eletrônicos e Redes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar na Kads..." onkeyup="searchContent()">
+            <button type="button" onclick="searchContent()">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Componentes Eletrônicos e Redes</h1>
+
+            <h2>Resistores e Código de Cores</h2>
+            <p>Os resistores são componentes fundamentais em circuitos eletrônicos, usados para limitar o fluxo de corrente. Cada resistor tem um código de cores que indica seu valor de resistência. O código de cores é composto por faixas coloridas, cada uma representando um número ou multiplicador. A seguir, um exemplo de código de cores:</p>
+            <ul>
+                <li>Preto: 0</li>
+                <li>Marrom: 1</li>
+                <li>Vermelho: 2</li>
+                <li>Amarelo: 4</li>
+                <li>Verde: 5</li>
+                <li>Azul: 6</li>
+                <li>Violeta: 7</li>
+                <li>Cinza: 8</li>
+                <li>Branco: 9</li>
+            </ul>
+            <br><br>
+
+            <h2>Diodo LED e Display de Sete Segmentos</h2>
+            <p>Os LEDs (Light Emitting Diodes) são diodos que emitem luz quando a corrente passa por eles. São amplamente usados em indicadores e displays.</p>
+            <p>O display de sete segmentos é utilizado para mostrar números e é composto por sete LEDs dispostos em forma de 8, sendo cada segmento controlado individualmente.</p>
+            <br><br>
+
+            <h2>Tinkercad: Projeto de Exemplo com Print de Tela</h2>
+            <p>O Tinkercad é uma plataforma online que permite a criação de circuitos eletrônicos e programação de microcontroladores, como o Arduino. A seguir, veja um exemplo de projeto no Tinkercad:</p>
+            <img src="tinkercad.png" alt="Print de Tela do Tinkercad" width="600" height="400">
+            <br><br>
+
+            <h2>Placa Arduino e Programação na IDE Arduino</h2>
+            <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto. Ele é utilizado para criar projetos interativos com sensores, LEDs e outros componentes eletrônicos. A seguir, veja como usar o Arduino na IDE (Ambiente de Desenvolvimento Integrado):</p>
+            <ul>
+                <li>Conecte a placa Arduino ao seu computador via USB.</li>
+                <li>Abra a IDE Arduino, selecione a porta e a placa correta.</li>
+                <li>Escreva o código e clique em "Upload" para transferir para o Arduino.</li>
+            </ul>
+            <br><br>
+
+            <h2>Entradas e Saídas no Arduino</h2>
+            <h3>Entrada Analógica</h3>
+            <p>O Arduino pode ler sinais analógicos (como sensores de temperatura, luz, etc.) através de suas portas analógicas. O valor lido varia de 0 a 1023.</p>
+
+            <h3>Entrada Digital</h3>
+            <p>O Arduino também pode ler sinais digitais (ligado/desligado) através das portas digitais.</p>
+
+            <h3>Saída Analógica (PWM)</h3>
+            <p>A saída analógica no Arduino é realizada via PWM (Modulação por Largura de Pulso), que cria um sinal de corrente que simula uma saída analógica contínua.</p>
+
+            <h3>Saída Digital</h3>
+            <p>Você pode controlar dispositivos como LEDs e motores com saídas digitais (ligar/desligar) no Arduino.</p>
+            <br><br>
+
+            <h2>Multímetro: O Que é e Para Que Serve</h2>
+            <p>O multímetro é um instrumento usado para medir várias grandezas elétricas, como tensão, corrente e resistência. Ele pode ser digital ou analógico e é essencial para testar e diagnosticar circuitos eletrônicos.</p>
+            <br><br>
+
+            <h2>Unidades de Medida no Multímetro</h2>
+            <ul>
+                <li>Tensão (Voltagem): Medida em Volts (V)</li>
+                <li>Corrente: Medida em Amperes (A)</li>
+                <li>Resistência: Medida em Ohms (Ω)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 – Kads Sistemas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

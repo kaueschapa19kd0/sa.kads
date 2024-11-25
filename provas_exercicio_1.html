@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Verificação de Idade para Votação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="verificacao_idade.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar na Kads...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="verificacao-idade">
+            <h1>Verificação de Idade para Votação</h1>
+            <p>Este exercício consiste em verificar se uma pessoa está apta a votar com base em sua idade. Insira a idade no campo abaixo e descubra o resultado.</p>
+
+            <div class="controle-idade">
+                <label for="idade">Digite sua idade:</label>
+                <input type="number" id="idade">
+                <button type="button" onclick="calcula()">Verificar</button>
+
+               <br><br><div id="resposta"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 – Kads Sistemas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

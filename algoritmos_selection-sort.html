@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort - Algoritmos de Ordenação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="selection_sort.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar na Kads..." onkeyup="searchContent()">
+            <button type="button" onclick="searchContent()">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="selection-sort">
+            <h1>Selection Sort</h1>
+            <p>O Selection Sort é um algoritmo de ordenação que divide a lista em duas partes: a parte ordenada e a parte não ordenada, selecionando repetidamente o menor (ou maior) elemento da parte não ordenada e trocando-o com o primeiro elemento não ordenado.</p>
+
+            <!-- Adicionando o vídeo do YouTube -->
+            <div class="video-container">
+                <h3>Assista ao vídeo explicativo sobre Selection Sort:</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8ImWnOHx0SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="controla">
+                <label for="quantidade">Quantidade de números:</label>
+                <input type="number" id="quantidade" min="1" placeholder="Digite a quantidade">
+                <button id="gerar">Gerar Números</button>
+            </div>
+
+            <div id="numeros-gerados">
+                <h3>Números Gerados:</h3>
+                <p id="array-original">[ ]</p>
+            </div>
+
+            <div id="resultado-ordenacao">
+                <h3>Resultado da Ordenação:</h3>
+                <p id="array-ordenado">[ ]</p>
+            </div>
+
+            <button id="ordenar">Ordenar com Selection Sort</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 – Kads Sistemas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

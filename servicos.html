@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Kads Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar na Kads..." onkeyup="searchContent()">
+            <button type="button" onclick="searchContent()">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <h1>Nossos Serviços</h1>
+
+            <!-- Banco de Dados -->
+            <div class="service">
+                <h2>Bancos de Dados</h2>
+                <p>Trabalhamos com bancos de dados robustos, como MySQL, PostgreSQL e SQL Server, garantindo eficiência e segurança no gerenciamento de informações. Utilizamos ferramentas como o Diagrama Entidade-Relacionamento (DER) e Dicionário de Dados para facilitar a comunicação e atender de forma clara às necessidades dos nossos clientes.</p>
+                
+                <h3>O que é um Banco de Dados?</h3>
+                <p>Um banco de dados é um sistema de armazenamento e organização de dados de maneira estruturada, permitindo fácil acesso, gerenciamento e manipulação de grandes volumes de informações.</p>
+
+                <h3>Banco de Dados Relacional</h3>
+                <p>Banco de dados relacional é um modelo de banco de dados que armazena informações em tabelas inter-relacionadas. Exemplos incluem MySQL, PostgreSQL e Oracle.</p>
+
+                <h3>Banco de Dados Não Relacional</h3>
+                <p>Banco de dados não relacional, também conhecido como NoSQL, é um banco de dados que não utiliza tabelas relacionais. Exemplos incluem MongoDB, Cassandra e CouchDB.</p>
+
+                <h3>O que é um Diagrama Conceitual DER?</h3>
+                <p>O Diagrama Entidade-Relacionamento (DER) é uma ferramenta visual usada para representar as entidades, seus atributos e os relacionamentos entre elas no modelo de dados.</p>
+
+                <h3>O que é um Diagrama Lógico MER?</h3>
+                <p>O Modelo Entidade-Relacionamento (MER) é um modelo lógico que detalha as entidades e seus relacionamentos, baseado no modelo conceitual, mas com mais detalhes técnicos para implementação.</p>
+
+                <h3>Diagrama DER do Exercício</h3>
+                <p>Apresentamos aqui o Diagrama Entidade-Relacionamento (DER) do exercício, que ilustra como as entidades estão conectadas entre si.</p>
+                <img src="der.png" alt="Exemplo Diagrama DER" class="diagram-img">
+
+                <h3>Diagrama MER do Exercício</h3>
+                <p>O Diagrama Lógico MER detalha ainda mais os relacionamentos, características e especificações dos dados de maneira técnica.</p>
+                <img src="mer.png" alt="Exemplo Diagrama MER" class="diagram-img">
+
+                <h3>Quais os Bancos de Dados que a Empresa Trabalha?</h3>
+                <p>A Kads Sistemas trabalha com uma variedade de bancos de dados, incluindo:</p>
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>SQL Server</li>
+                    <li>MongoDB</li>
+                </ul>
+
+                <h3>O que é Dicionário de Dados?</h3>
+                <p>O Dicionário de Dados é um repositório que armazena a descrição das estruturas de dados, incluindo tabelas, campos, relacionamentos e regras de negócio, oferecendo uma visão clara de como os dados são organizados e utilizados.</p>
+            </div>
+
+            <!-- Seção Servidor FTP -->
+            <div class="service">
+                <h2>Servidor FTP</h2>
+                <h3>O que é um servidor FTP?</h3>
+                <p>Um servidor FTP (File Transfer Protocol) é um sistema que permite a transferência de arquivos entre computadores através da internet ou de uma rede local.</p>
+
+                <h3>Funcionalidades em uma rede</h3>
+                <p>As principais funcionalidades incluem a troca de arquivos, a possibilidade de fazer upload e download de documentos e a gestão de permissões de usuários.</p>
+
+                <h3>Razões para uso no passado</h3>
+                <p>FTP foi amplamente utilizado devido à sua facilidade de uso e suporte a grandes transferências de dados, embora apresentasse limitações como falta de segurança para dados sensíveis.</p>
+
+                <h3>Diferenças com Armazenamento em Nuvem</h3>
+                <p>Enquanto o FTP é focado na transferência de arquivos, serviços em nuvem como Google Drive e OneDrive oferecem armazenamento, colaboração em tempo real e acesso via interface web, além de segurança avançada.</p>
+            </div>
+
+            <!-- Seção Servidor de Email -->
+            <div class="service">
+                <h2>Servidor de E-mail</h2>
+                <h3>O que é?</h3>
+                <p>Um servidor de e-mail é responsável por enviar, receber e armazenar e-mails, facilitando a comunicação digital entre usuários.</p>
+
+                <h3>Protocolos SMTP, POP3 e IMAP</h3>
+                <p>SMTP (Simple Mail Transfer Protocol) é utilizado para enviar e-mails, enquanto POP3 (Post Office Protocol) e IMAP (Internet Message Access Protocol) são usados para recuperar e gerenciar e-mails armazenados no servidor.</p>
+
+                <h3>Portas de Comunicação</h3>
+                <p>As portas comuns utilizadas por esses protocolos são:</p>
+                <ul>
+                    <li><strong>Porta 25:</strong> Usada pelo SMTP para envio de e-mails.</li>
+                    <li><strong>Porta 110:</strong> Usada pelo POP3 para recuperação de e-mails.</li>
+                    <li><strong>Porta 143:</strong> Usada pelo IMAP para acesso e gerenciamento de e-mails.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados - Kads Sistemas</p>
+    </footer>
+</body>
+</html>

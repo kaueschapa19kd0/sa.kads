@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Soma dos Elementos Aleatórios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercicio3.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Exercício 3 - Soma dos Elementos Aleatórios</h1>
+        <p>Este exercício envolve a criação de uma matriz 7x7 com números aleatórios e a soma de todos os seus elementos.</p>
+
+        <button onclick="showCode()">Ver Código</button>
+
+        <div id="codeContainer" style="display: none;">
+            <h3>Código do Exercício</h3>
+            <pre>
+function gerarMatrizAleatoria() {
+    let matriz = [];
+    for (let i = 0; i < 7; i++) {
+        matriz[i] = [];
+        for (let j = 0; j < 7; j++) {
+            matriz[i][j] = Math.floor(Math.random() * 20) + 1; // Números aleatórios de 1 a 20
+        }
+    }
+    return matriz;
+}
+
+function somaMatriz(matriz) {
+    let soma = 0;
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            soma += matriz[i][j];
+        }
+    }
+    return soma;
+}
+
+function executarExercicio() {
+    let matriz = gerarMatrizAleatoria();
+    console.table(matriz);  // Exibe a matriz no console
+    console.log("Soma dos elementos da matriz:", somaMatriz(matriz));  // Exibe a soma dos elementos
+}
+            </pre>
+        </div>
+        
+        <h3>Explicação:</h3>
+<p>O código funciona da seguinte forma:</p>
+<ul>
+    <li>A função <code>gerarMatrizAleatoria</code> cria uma matriz de 7x7 com números aleatórios entre 1 e 20.</li>
+    <li>Dentro de dois laços <code>for</code>, percorre-se todas as linhas e colunas da matriz e, para cada posição, é gerado um número aleatório.</li>
+    <li>A função <code>somaMatriz</code> recebe a matriz gerada como argumento.</li>
+    <li>Dentro de dois laços <code>for</code>, percorre-se todos os elementos da matriz, somando-os à variável <code>soma</code>.</li>
+    <li>Após percorrer todos os elementos da matriz, a função retorna o valor total da soma.</li>
+    <li>A função <code>executarExercicio</code> chama as funções <code>gerarMatrizAleatoria</code> e <code>somaMatriz</code>, exibe a matriz no console e mostra a soma dos elementos.</li>
+</ul>
+
+<h3>Saída Esperada:</h3>
+<p>O resultado será a soma de todos os elementos da matriz 7x7 gerada aleatoriamente. O valor da soma pode variar a cada execução, pois os números da matriz são aleatórios.</p>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados - Kads Sistemas</p>
+    </footer>
+
+</body>
+</html>

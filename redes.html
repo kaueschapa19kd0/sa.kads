@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes - Kads Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar na Kads..." onkeyup="searchContent()">
+            <button type="button" onclick="searchContent()">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Elementos, Componentes e Configuração de Rede Interna</h1>
+            <p>O servidor web é inserido dentro de uma rede configurada de maneira eficiente para garantir a comunicação entre todos os elementos da infraestrutura de TI.</p>
+        </section>
+
+        <section class="server-configuration">
+            <h2>Configuração dos Servidores</h2>
+            <p>Na configuração da rede interna, utilizamos servidores de Domínio (DNS), Servidor HTTP para comunicação web e servidores DHCP para atribuição dinâmica de IPs.</p>
+
+            <h3>Serviço de DNS</h3>
+            <p>O DNS (Domain Name System) é um sistema de nomes que traduz nomes de domínio em endereços IP para facilitar o acesso a recursos em redes e servidores.</p>
+
+            <h3>Servidor HTTP</h3>
+            <p>O servidor HTTP é responsável por servir páginas web para os navegadores, fornecendo conteúdo a partir de requisições feitas pelos clientes (usuários).</p>
+
+            <h3>Servidor DHCP</h3>
+            <p>O servidor DHCP (Dynamic Host Configuration Protocol) atribui dinamicamente endereços IP aos dispositivos na rede, permitindo a comunicação e o acesso aos recursos da rede sem a necessidade de configuração manual.</p>
+
+            <h4>Equipamentos Aplicados em Redes</h4>
+            <p>Os equipamentos utilizados na rede incluem roteadores, switches e cabos de rede. Cada um desses elementos desempenha um papel fundamental para garantir a conectividade e a comunicação eficiente dentro da rede interna.</p>
+
+            <div class="image-gallery">
+                <h3>Foto da Crimpagem e Cabo de Rede</h3>
+                <img src="freepik__candid-image-photography-natural-textures-highly-r__93358.jpeg" alt="Foto da Crimpagem">
+                <img src="pinagem.jpg" alt="Cabo de Rede - Pinagem">
+            </div>
+        </section>
+
+        <section class="network-concepts">
+            <h2>Conceitos Importantes</h2>
+            <h3>Conceito de Servidor</h3>
+            <p>Um servidor é um sistema computacional dedicado a fornecer recursos, dados ou serviços para outros computadores, chamados de clientes, dentro de uma rede.</p>
+
+            <h3>O que é DNS?</h3>
+            <p>O DNS (Domain Name System) é um sistema de nomenclatura hierárquico usado para resolver nomes de domínio (como www.exemplo.com) em endereços IP (como 192.168.0.1), que são utilizados para localizar servidores na internet ou na rede local.</p>
+
+            <h3>O que é HTTP?</h3>
+            <p>O HTTP (Hypertext Transfer Protocol) é um protocolo de comunicação usado para transferência de dados na web, sendo fundamental para a exibição de páginas da web no navegador do usuário.</p>
+
+            <h3>O que é DHCP?</h3>
+            <p>O DHCP (Dynamic Host Configuration Protocol) é um protocolo que permite a um servidor fornecer automaticamente configurações de rede, como o endereço IP, para os dispositivos de uma rede local.</p>
+
+            <h4>Modelo OSI</h4>
+            <p>O Modelo OSI (Open Systems Interconnection) é uma referência para entender como os sistemas de comunicação em redes devem se comportar, dividindo as operações de rede em 7 camadas: Física, Enlace de Dados, Rede, Transporte, Sessão, Apresentação e Aplicação.</p>
+            <img src="Modelo OSI.png" alt="Modelo OSI">
+
+            <h4>Conceito de TCP/IP</h4>
+            <p>O modelo TCP/IP (Transmission Control Protocol/Internet Protocol) é a base para a comunicação na internet, sendo composto por quatro camadas: Link, Internet, Transporte e Aplicação.</p>
+            <img src="tcp.png" alt="Modelo TCP/IP">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados - Kads Sistemas</p>
+    </footer>
+
+</body>
+</html>

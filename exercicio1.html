@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Cálculo da Média</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercicio1.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div id="logo-container">
+            <img src="kads (2).svg" alt="Logo Kads" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="algoritmos_fluxogramas.html">Fluxogramas</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Exercício 1 - Cálculo da Média</h1>
+        <p>Este exercício calcula a média dos números de um array utilizando um contador, com a soma dos elementos realizada em um laço <code>do...while</code>.</p>
+
+        <button onclick="showCode()">Ver Código</button>
+
+        <div id="codeContainer" style="display: none;">
+            <h3>Código do Exercício</h3>
+            <pre>
+let array = [1, 2, 3, 4, 5, 6, 7];
+let contador = 7;
+
+function media() {
+    let soma = 0;
+    let media = 0;
+
+    do {
+        soma += array[contador - 1];
+        console.log(\`soma = \${soma}\`);
+        contador--;
+        console.log(\`Contador = \${contador}\`);
+    } while (contador > 0);
+    
+    media = soma / array.length;
+    console.log("Média = " + media);
+}
+
+media();
+            </pre>
+        </div>
+
+        <h3>Explicação:</h3>
+        <p>O código funciona da seguinte forma:</p>
+        <ul>
+            <li>A função <code>media</code> começa com a definição de uma lista de números, no caso, o array <code>[1, 2, 3, 4, 5, 6, 7]</code>, e um contador inicializado com o valor 7 (tamanho do array).</li>
+            <li>A função utiliza o laço <code>do...while</code>, que percorre o array de trás para frente, somando os valores de cada posição do array à variável <code>soma</code>.</li>
+            <li>Dentro do laço, a variável <code>contador</code> é decrementada a cada iteração, o que faz o loop percorrer os elementos na ordem inversa.</li>
+            <li>O laço continua até que o contador seja menor ou igual a zero. Depois que o laço é finalizado, a média é calculada dividindo a soma total pelo tamanho do array.</li>
+            <li>A média é exibida no console utilizando <code>console.log</code>.</li>
+        </ul>
+
+        <h3>Saída Esperada:</h3>
+        <p>A saída será a exibição da soma parcial a cada iteração do laço, seguida da média final calculada, que será: <strong>4</strong>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados - Kads Sistemas</p>
+    </footer>
+
+</body>
+</html>
+
